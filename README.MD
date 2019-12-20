@@ -104,6 +104,8 @@ routes.delete('/candidacy/:id', candidacyController.deleteById); // params: { id
 
 * Padrão de pastas utilizado: MVC
 * Arquivo das variáveis de ambiente .env preferencialmente deve ser ignorado em .gitignore
+* Para utilizar as minhas requests do insomnia basta importar no insomnia o arquivo do diretório insomnia/
+* Padrão underscored utilizado para nome dos campos no banco de dados
 
 ## Autor
 

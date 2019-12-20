@@ -23,10 +23,10 @@ module.exports = {
   },
   async store(req, res) {
     const schema = Yup.object().shape({
-      idVacancy: Yup.number()
+      id_vacancy: Yup.number()
         .integer()
         .required(),
-      idCandidate: Yup.number()
+      id_candidate: Yup.number()
         .integer()
         .required(),
     });
@@ -34,20 +34,20 @@ module.exports = {
       return res.status(400).json({ error: 'Validation failed' });
     }
     const vacancyExists = await Vacancy.findOne({
-      where: { id: req.body.idVacancy },
+      where: { id: req.body.id_vacancy },
     });
     if (!vacancyExists) {
       return res
         .status(400)
-        .json({ error: `Vacancy '${req.body.idVacancy}' does not exist` });
+        .json({ error: `Vacancy '${req.body.id_vacancy}' does not exist` });
     }
     const candidateExists = await Candidate.findOne({
-      where: { id: req.body.idCandidate },
+      where: { id: req.body.id_candidate },
     });
     if (!candidateExists) {
       return res
         .status(400)
-        .json({ error: `Candidate '${req.body.idCandidate}' does not exist` });
+        .json({ error: `Candidate '${req.body.id_candidate}' does not exist` });
     }
     const result = await Candidacy.create(req.body);
     if (result) {
