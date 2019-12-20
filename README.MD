@@ -47,7 +47,7 @@ API feita para backend challenge da [Nave.rs](https://nave.rs) utilizando Node.j
 
 1. Crie um banco de dados chamado navedb no Mysql
 2. Rode o script 'navedbscript.sql'no banco de dados 'navedb' criado (script no diretório /db)
-3. Talvez seja necessário alterar o usuário e senha do arquivo de configuração em src/config/database.js
+3. Talvez seja necessário alterar o usuário e senha do arquivo de configuração em .env ou src/config/database.js
 
 Relacional utilizado (sem normalizações) encontra-se no diretório /diagrama
 
