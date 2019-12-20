@@ -23,6 +23,7 @@ API feita para backend challenge da [Nave.rs](https://nave.rs) utilizando Node.j
 * express: 4.17.1
 * mysql2: 2.0.2
 * sequelize: 5.21.3
+* dotenv: 8.2.0
 * yup: 0.28.0
 
 ### Dependências de desenvolvimento
