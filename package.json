@@ -1,0 +1,29 @@
+{
+  "name": "nave-api",
+  "version": "1.0.0",
+  "description": "backend challenge",
+  "main": "index.js",
+  "author": "Christopher Moura",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.2",
+    "sequelize": "^5.21.3",
+    "yup": "^0.28.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sequelize-cli": "^5.5.1",
+    "sucrase": "^3.10.1"
+  }
+}
