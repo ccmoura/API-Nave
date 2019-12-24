@@ -2,4 +2,4 @@
 
 #*.env
 
-*.log
+yarn-error.log
